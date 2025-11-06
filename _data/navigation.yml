@@ -18,11 +18,49 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "Categories1"
-    url: /categories/categories1/
-  - title: "Categories2"
-    url: /categories/categories2/
-  - title: "Categories3"
-    url: /categories/categories3/
-  - title: "Categories4"
-    url: /categories/categories4/
+  - title: "공지사항"
+    url: /categories/notice/
+
+  - title: "과학기술"
+    children:
+      - title: "네트워크 과학"
+        url: /categories/network-science/
+      - title: "데이터 분석"
+        url: /categories/data-analysis/
+      - title: "정보이론"
+        url: /categories/information-theory/
+      - title: "AI"
+        url: /categories/ai/
+
+  - title: "관심사"
+    children:
+      - title: "시간"
+        url: /categories/time/
+      - title: "철학"
+        url: /categories/philosophy/
+      - title: "기타"
+        url: /categories/interests-etc/
+
+  - title: "모임"
+    children:
+      - title: "폴티"
+        url: /categories/polty/
+      - title: "가짜연구소"
+        url: /categories/pseudolab/
+      - title: "독서모임"
+        url: /categories/bookclub/
+
+  - title: "취미"
+    children:
+      - title: "Doctor Who"
+        url: /categories/doctor-who/
+      - title: "Sherlock Holmes"
+        url: /categories/sherlock-holmes/
+      - title: "J. R. R. Tolkien"
+        url: /categories/tolkien/
+      - title: "The Prisoner"
+        url: /categories/prisoner/
+      - title: "Alcohol"
+        url: /categories/alcohol/
+      - title: "Etc."
+        url: /categories/hobby-etc/
