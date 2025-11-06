@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Home"
-    url: https://wholmesian.github.io/
+  # - title: "Home"
+  #   url: https://wholmesian.github.io/
 
   - title: "About"
     url: /about/
@@ -12,12 +12,13 @@ main:
   # - title: "Projects"
   #   url: /projects/
 
-  # - title: "Categories"
-  #   url: /categories/
+  - title: "Categories"
+    url: /categories/
 
 # sidebar navigation (categories)
 # 2022.09.24 sidebar ver2.0 : main-sub version
 categories:
+
   - title: "Study"
     children:
       - title: "Network Science"
