@@ -1,5 +1,5 @@
 ---
-title: "데이터 분석"
+title: "Data Analysis"
 layout: category
 permalink: /categories/data-analysis/
 author_profile: true

@@ -1,5 +1,5 @@
 ---
-title: "철학"
+title: "Philosophy"
 layout: category
 permalink: /categories/philosophy/
 author_profile: true

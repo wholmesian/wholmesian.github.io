@@ -18,29 +18,24 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "과학기술"
+  - title: "Study"
     children:
-      - title: "네트워크 과학"
+      - title: "Network Science"
         url: /categories/network-science/
-
-      - title: "데이터 분석"
+      - title: "Data Analysis"
         url: /categories/data-analysis/
-
-      - title: "정보이론"
+      - title: "Information Theory"
         url: /categories/information-theory/
-
       - title: "AI"
         url: /categories/ai/
 
-  - title: "관심사"
+  - title: "Interests"
     children:
-      - title: "시간"
+      - title: "Time"
         url: /categories/time/
-
-      - title: "철학"
+      - title: "Philosophy"
         url: /categories/philosophy/
-
-      - title: "기타"
+      - title: "Etc."
         url: /categories/interests-etc/
 
   # - title: "모임"

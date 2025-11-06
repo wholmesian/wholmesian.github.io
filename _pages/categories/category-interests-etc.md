@@ -1,5 +1,5 @@
 ---
-title: "기타"
+title: "Etc."
 layout: category
 permalink: /categories/interests-etc/
 author_profile: true
