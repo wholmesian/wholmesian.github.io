@@ -22,10 +22,13 @@ categories:
     children:
       - title: "네트워크 과학"
         url: /categories/network-science/
+
       - title: "데이터 분석"
         url: /categories/data-analysis/
+
       - title: "정보이론"
         url: /categories/information-theory/
+
       - title: "AI"
         url: /categories/ai/
 
@@ -33,8 +36,10 @@ categories:
     children:
       - title: "시간"
         url: /categories/time/
+
       - title: "철학"
         url: /categories/philosophy/
+
       - title: "기타"
         url: /categories/interests-etc/
 
