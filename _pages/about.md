@@ -1,5 +1,5 @@
 ---
-title: "Hi all! I'm OOOOOO👋🏻"
+title: "wholmesian / 남궁민상"
 permalink: /about/
 layout: single
 comments: false
