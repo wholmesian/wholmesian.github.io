@@ -18,9 +18,6 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "공지사항"
-    url: /categories/notice/
-
   - title: "과학기술"
     children:
       - title: "네트워크 과학"
