@@ -38,26 +38,26 @@ categories:
       - title: "기타"
         url: /categories/interests-etc/
 
-  - title: "모임"
-    children:
-      - title: "폴티"
-        url: /categories/polty/
-      - title: "가짜연구소"
-        url: /categories/pseudolab/
-      - title: "독서모임"
-        url: /categories/bookclub/
+  # - title: "모임"
+  #   children:
+  #     - title: "폴티"
+  #       url: /categories/polty/
+  #     - title: "가짜연구소"
+  #       url: /categories/pseudolab/
+  #     - title: "독서모임"
+  #       url: /categories/bookclub/
 
-  - title: "취미"
-    children:
-      - title: "Doctor Who"
-        url: /categories/doctor-who/
-      - title: "Sherlock Holmes"
-        url: /categories/sherlock-holmes/
-      - title: "J. R. R. Tolkien"
-        url: /categories/tolkien/
-      - title: "The Prisoner"
-        url: /categories/prisoner/
-      - title: "Alcohol"
-        url: /categories/alcohol/
-      - title: "Etc."
-        url: /categories/hobby-etc/
+  # - title: "취미"
+  #   children:
+  #     - title: "Doctor Who"
+  #       url: /categories/doctor-who/
+  #     - title: "Sherlock Holmes"
+  #       url: /categories/sherlock-holmes/
+  #     - title: "J. R. R. Tolkien"
+  #       url: /categories/tolkien/
+  #     - title: "The Prisoner"
+  #       url: /categories/prisoner/
+  #     - title: "Alcohol"
+  #       url: /categories/alcohol/
+  #     - title: "Etc."
+  #       url: /categories/hobby-etc/
