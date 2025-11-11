@@ -6,11 +6,11 @@ main:
   - title: "About"
     url: /about/
 
-  - title: "GitHub"
-    url: https://github.com/wholmesian
+#   - title: "GitHub"
+#     url: https://github.com/wholmesian
 
-  # - title: "Projects"
-  #   url: /projects/
+  - title: "Projects"
+    url: /projects/
 
   - title: "Categories"
     url: /categories/
