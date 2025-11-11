@@ -6,6 +6,8 @@ categories:
   - Network Science
 tags:
   - [tag1, tag2]
+projects:
+  - ROK Legal Network
 
 permalink: /network-science/post-name-here/
 

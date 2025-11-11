@@ -282,3 +282,22 @@ defaults:
       related: true
       sidebar:
         nav: "categories"
+  # _projects 컬렉션의 기본값 설정
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single # 개별 프로젝트 페이지의 기본 레이아웃
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      sidebar:
+        nav: "projects" # 프로젝트 전용 사이드바 네비게이션 (필요시 _data/navigation.yml에 정의)
+
+# Jekyll 컬렉션 정의
+collections:
+  projects:
+    output: true # 각 프로젝트 문서에 대해 개별 페이지 생성
+    permalink: /:collection/:name/ # 프로젝트 페이지의 URL 구조
