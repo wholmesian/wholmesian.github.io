@@ -8,13 +8,29 @@ layout: archive
   {% comment %} 사이트의 모든 페이지 중에서 layout이 'project'인 페이지만 선택합니다. {% endcomment %}
   {% assign project_pages = site.pages | where: "layout", "project" %}
   
-  {% for p in project_pages %}
-    <div class="list__item">
-      <article class="archive__item">
-        <h2 class="archive__item-title">
-          <a href="{{ p.url | relative_url }}" rel="permalink">{{ p.title }}</a>
-        </h2>
-      </article>
-    </div>
-  {% endfor %}
+  <div class="grid__wrapper">
+    {% for p in project_pages %}
+      <div class="archive__item">
+        <article class="card">
+          {% if p.image %}
+            <a href="{{ p.url | relative_url }}" class="card__image-link">
+              <div class="card__image">
+                <img src="{{ p.image | relative_url }}" alt="{{ p.title }}">
+              </div>
+            </a>
+          {% endif %}
+          <div class="card__content">
+            <h2 class="card__title">
+              <a href="{{ p.url | relative_url }}" rel="permalink">{{ p.title }}</a>
+            </h2>
+            {% if p.description %}
+              <p class="card__excerpt">
+                {{ p.description | strip_html | truncate: 120 }}
+              </p>
+            {% endif %}
+          </div>
+        </article>
+      </div>
+    {% endfor %}
+  </div>
 </div>
