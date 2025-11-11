@@ -1,29 +1,36 @@
 ---
-layout: archive
+layout: single
 ---
-{% comment %}
-  The 'archive' layout doesn't render the page content by default.
-  We add the new fields (image, description, github_link) from the page's front matter here.
-{% endcomment %}
-{% if page.image %}
-  <img src="{{ page.image | relative_url }}" alt="{{ page.title }} project image">
-{% endif %}
- 
-{% if page.description %}
-  <p style="font-size: 1.1em; margin-top: 1.5em; margin-bottom: 1.5em;">{{ page.description }}</p>
-{% endif %}
- 
-{% if page.github_link %}
-  <a href="{{ page.github_link }}" class="btn btn--github"><i class="fab fa-fw fa-github"></i> GitHub Repository</a>
-  <hr>
-{% endif %}
- 
-{% assign posts = site.posts | where_exp:"post", "post.projects contains page.taxonomy" %}
-<div class="archive">
-  <h2 class="archive__subtitle">관련 포스트</h2>
-  <div class="entries-{{ entries_layout }}">
-    {% for post in posts %}
-      {% include archive-single.html type=entries_layout %}
-    {% endfor %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    <h1 id="page-title" class="page__title">{{ page.title }}</h1>
+
+    <div class="page__inner-wrap">
+      <section class="page__content">
+        {% if page.image %}
+          <img src="{{ page.image | relative_url }}" alt="{{ page.title }} project image" style="width: 100%;">
+        {% endif %}
+        
+        {% if page.description %}
+          <p style="font-size: 1.1em; margin-top: 1.5em; margin-bottom: 1.5em;">{{ page.description }}</p>
+        {% endif %}
+        
+        {% if page.github_link %}
+          <a href="{{ page.github_link }}" class="btn btn--github"><i class="fab fa-fw fa-github"></i> GitHub Repository</a>
+          <hr>
+        {% endif %}
+      </section>
+    </div>
+
+    <h2 class="archive__subtitle" style="margin-top: 2em;">관련 포스트</h2>
+    {% assign posts = site.posts | where_exp:"post", "post.projects contains page.taxonomy" %}
+    <div class="entries-{{ entries_layout | default: 'list' }}">
+      {% for post in posts %}
+        {% include archive-single.html type=entries_layout %}
+      {% endfor %}
+    </div>
   </div>
 </div>
