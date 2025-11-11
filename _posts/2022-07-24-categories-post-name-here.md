@@ -14,7 +14,7 @@ permalink: /network-science/post-name-here/
 toc: true
 toc_sticky: true
 
-date: 2024-11-21
+date: 2024-11-11
 last_modified_at: 2021-10-09
 ---
 
