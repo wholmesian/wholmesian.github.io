@@ -6,7 +6,7 @@
   transition: transform 0.2s; /* 부드러운 효과를 위한 transition */
   display: flex;
   flex-direction: column;
-  aspect-ratio: 12 / 6;
+  aspect-ratio: 16 / 9;
 }
 .card:hover {
   transform: translateY(-5px); /* 마우스를 올렸을 때 살짝 위로 올라가는 효과 */
@@ -27,6 +27,6 @@
 }
 .card__content {
   height: 33.34%; /* 콘텐츠 영역이 카드 높이의 1/3을 차지하도록 고정 */
-  padding: 1em;
+  padding: 1em 1em 1em 1.5em; /* 위, 오른쪽, 아래, 왼쪽 여백 설정 */
   border-top: 1px solid #6b6b6b; /* 이미지와 콘텐츠 사이에 실선 추가 */
 }
