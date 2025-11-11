@@ -1,9 +1,9 @@
 ---
-title: "AI"
+title: "Time"
 layout: category
-permalink: /categories/ai/
+permalink: /categories/interests/time/
 author_profile: true
-taxonomy: AI
+taxonomy: Time
 sidebar:
   nav: "categories"
 ---

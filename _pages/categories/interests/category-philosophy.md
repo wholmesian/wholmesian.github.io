@@ -1,9 +1,9 @@
 ---
 title: "Philosophy"
 layout: category
-permalink: /categories/philosophy/
+permalink: /categories/interests/philosophy/
 author_profile: true
-taxonomy: philosophy
+taxonomy: Philosophy
 sidebar:
   nav: "categories"
 ---

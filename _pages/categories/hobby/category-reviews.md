@@ -1,9 +1,9 @@
 ---
-title: "Time"
+title: "Reviews"
 layout: category
-permalink: /categories/time/
+permalink: /categories/hobby/reviews/
 author_profile: true
-taxonomy: time
+taxonomy: Reviews
 sidebar:
   nav: "categories"
 ---

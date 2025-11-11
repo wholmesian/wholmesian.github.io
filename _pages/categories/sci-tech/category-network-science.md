@@ -1,7 +1,7 @@
 ---
 title: "Network Science"
 layout: category
-permalink: /categories/network-science/
+permalink: /categories/sci-tech/network-science/
 author_profile: true
 taxonomy: Network Science
 sidebar:

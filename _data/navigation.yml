@@ -19,46 +19,46 @@ main:
 # 2022.09.24 sidebar ver2.0 : main-sub version
 categories:
 
-  - title: "Study"
+  - title: "과학ㆍ기술"
     children:
       - title: "Network Science"
-        url: /categories/network-science/
+        url: /categories/sci-tech/network-science/
       - title: "Data Analysis"
-        url: /categories/data-analysis/
+        url: /categories/sci-tech/data-analysis/
       - title: "Information Theory"
-        url: /categories/information-theory/
+        url: /categories/sci-tech/information-theory/
       - title: "AI"
-        url: /categories/ai/
+        url: /categories/sci-tech/ai/
 
-  - title: "Interests"
+  - title: "관심사"
     children:
       - title: "Time"
-        url: /categories/time/
+        url: /categories/interests/time/
       - title: "Philosophy"
-        url: /categories/philosophy/
-      - title: "Etc."
-        url: /categories/interests-etc/
+        url: /categories/interests/philosophy/
+      - title: "Other Interests"
+        url: /categories/interests/interests-etc/
 
-  # - title: "모임"
-  #   children:
+  - title: "모임"
+    children:
   #     - title: "폴티"
   #       url: /categories/polty/
-  #     - title: "가짜연구소"
-  #       url: /categories/pseudolab/
-  #     - title: "독서모임"
-  #       url: /categories/bookclub/
+      - title: "PseudoLab"
+        url: /categories/club/pseudolab/
+      - title: "Book Club"
+        url: /categories/club/bookclub/
 
-  # - title: "취미"
-  #   children:
+  - title: "취미"
+    children:
   #     - title: "Doctor Who"
   #       url: /categories/doctor-who/
   #     - title: "Sherlock Holmes"
   #       url: /categories/sherlock-holmes/
-  #     - title: "J. R. R. Tolkien"
-  #       url: /categories/tolkien/
+    - title: "J. R. R. Tolkien"
+      url: /categories/hobby/tolkien/
   #     - title: "The Prisoner"
   #       url: /categories/prisoner/
-  #     - title: "Alcohol"
-  #       url: /categories/alcohol/
-  #     - title: "Etc."
-  #       url: /categories/hobby-etc/
+    - title: "Reviews"
+      url: /categories/hobby/reviews/
+    - title: "Other Hobbies"
+      url: /categories/hobby/hobby-etc/

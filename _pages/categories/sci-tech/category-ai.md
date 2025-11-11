@@ -1,9 +1,9 @@
 ---
-title: "Notice"
+title: "AI"
 layout: category
-permalink: /categories/notice/
+permalink: /categories/sci-tech/ai/
 author_profile: true
-taxonomy: notice
+taxonomy: AI
 sidebar:
   nav: "categories"
 ---
