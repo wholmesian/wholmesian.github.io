@@ -27,6 +27,6 @@
 }
 .card__content {
   height: 33.34%; /* 콘텐츠 영역이 카드 높이의 1/3을 차지하도록 고정 */
-  padding: 1em 1em 1em 1.5em; /* 위, 오른쪽, 아래, 왼쪽 여백 설정 */
+  padding: 0em 1em 1em 1.5em; /* 위, 오른쪽, 아래, 왼쪽 여백 설정 */
   border-top: 1px solid #6b6b6b; /* 이미지와 콘텐츠 사이에 실선 추가 */
 }
