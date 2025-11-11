@@ -12,7 +12,10 @@
     <strong><i class="fas fa-fw fa-briefcase" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].projects_label | default: "Projects:" }} </strong>
     <span itemprop="keywords">
     {% for project_word in projects_sorted %}
-      <a href="{{ project_word | slugify | prepend: path_type | prepend: site.project_archive.path | relative_url }}" class="page__taxonomy-item" rel="tag">{{ project_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      {% assign project_page = site.pages | where: "taxonomy", project_word | first %}
+      {% if project_page %}
+        <a href="{{ project_page.url | relative_url }}" class="page__taxonomy-item" rel="tag">{{ project_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      {% endif %}
     {% endfor %}
     </span>
   </p>
