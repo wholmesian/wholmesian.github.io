@@ -4,6 +4,12 @@ layout: archive
 
 <link rel="stylesheet" href="{{ '/assets/css/project-card.css' | relative_url }}">
 
+<style>
+  .archive__item {
+    padding: 0.5em; /* 각 카드 아이템 주위에 여백 추가 */
+  }
+</style>
+
 {{ content }}
 
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
