@@ -19,8 +19,8 @@ layout: archive
     {% for project in projects_grouped %}
       {% if project.items.size == i %}
         <li>
-          <a href="#{{ project[0] | slugify }}">
-            <strong>{{ project[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+          <a href="#{{ project.name | slugify }}">
+            <strong>{{ project.name }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
       {% endif %}
@@ -30,13 +30,13 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% for i in (1..projects_max_count) reversed %}
-  {% for group in projects_grouped %}
-    {% if group.items.size == i %}
-      <section id="{{ group.name | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ group.name }}</h2>
+  {% for project in projects_grouped %}
+    {% if project.items.size == i %}
+      <section id="{{ project.name | slugify | downcase }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ project.name }}</h2>
         <p></p>
         <div class="entries-{{ entries_layout }}">
-          {% for post in group.items %}
+          {% for post in project.items %}
             {% include archive-single.html type=entries_layout %}
           {% endfor %}
         </div>
