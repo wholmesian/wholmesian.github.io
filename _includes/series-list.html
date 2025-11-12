@@ -3,7 +3,7 @@
     <strong><i class="fas fa-fw fa-layer-group" aria-hidden="true"></i> Series: </strong>
     <span itemprop="keywords">
     {% for series in page.series %}
-      <a href="{{ '/series/' | append: series | slugify | relative_url }}" class="page__taxonomy-item" rel="series">{{ series }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      <a href="{{ '/series/' | append: (series | slugify) | relative_url }}" class="page__taxonomy-item" rel="series">{{ series }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
     {% endfor %}
     </span>
   </p>
