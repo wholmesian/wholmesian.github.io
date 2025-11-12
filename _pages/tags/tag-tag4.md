@@ -1,7 +1,7 @@
 ---
-title: "태그 4"
+title: "tag4"
 layout: tag
-permalink: /tags/tag-4/
+permalink: /tags/tag4/
 author_profile: true
 taxonomy: tag4
 sidebar:
