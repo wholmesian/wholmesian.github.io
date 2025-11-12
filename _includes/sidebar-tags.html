@@ -4,7 +4,7 @@
       site.tags is a hash, not an array. We can't sort it directly.
       Instead, we can sort by the size of the posts array for each tag.
     {% endcomment %}
-    {% assign sorted_tags = site.tags | sort | sort: "last.size" | reverse %}
+    {% assign sorted_tags = site.tags | sort_natural | sort: "last.size" | reverse %}
 
     <div class="tag-chips">
         {% for tag in sorted_tags limit:30 %}
