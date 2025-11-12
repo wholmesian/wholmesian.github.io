@@ -28,9 +28,9 @@ layout: archive
             </a>
           {% endif %}
           <div class="card__content">
-            <h3 class="card__title">
+            <h2 class="card__title">
               <a href="{{ p.url | relative_url }}" rel="permalink">{{ p.title }}</a>
-            </h3>
+            </h2>
             {% if p.description %}
               <p class="card__excerpt">
                 {{ p.description | strip_html | truncate: 130 }}
