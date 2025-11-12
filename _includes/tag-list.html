@@ -3,10 +3,10 @@
 
   <div class="page__taxonomy">
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
-    <div class="tag-chips" style="margin-top: 10px;">
+    <span class="tag-chips">
       {% for tag_word in tags_sorted %}
         <a href="{{ site.tag_archive.path | relative_url }}{{ tag_word | slugify }}/" class="tag-chip" rel="tag">{{ tag_word }}</a>
       {% endfor %}
-    </div>
+    </span>
   </div>
 {% endif %}

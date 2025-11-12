@@ -2,7 +2,7 @@
     <h4>Tags</h4>
     {% assign tags = site.tags | sort %}
 
-    <div class="tag-chips">
+    <div class="tag-chips" style="margin-top: 10px;">
       {% for tag in tags limit:30 %}
         {% assign tag_name = tag | first %}
         {% assign tag_size = tag | last | size %}
