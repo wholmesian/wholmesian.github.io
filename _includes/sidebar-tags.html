@@ -1,15 +1,16 @@
 <div class="sidebar-tags">
     <h4>Tags</h4>
-    {% comment %}
-      site.tags is a hash, not an array. We can't sort it directly.
-      Instead, we can sort by the size of the posts array for each tag.
-    {% endcomment %}
-    {% assign sorted_tags = site.tags | sort_natural | sort: "last.size" | reverse %}
+    {% assign tags = site.tags | sort %}
 
     <div class="tag-chips">
-        {% for tag in sorted_tags limit:30 %}
-            {% assign tag_name = tag | first %}
-            <a href="{{ site.tag_archive.path | relative_url }}#{{ tag_name | slugify }}" class="tag-chip">{{ tag_name }}</a>
-        {% endfor %}
+      {% for tag in tags limit:30 %}
+        {% assign tag_name = tag | first %}
+        {% assign tag_size = tag | last | size %}
+        {% if tag_size > 0 %}
+          <a href="{{ site.tag_archive.path | relative_url }}#{{ tag_name | slugify }}" class="tag-chip">
+            {{ tag_name }}
+          </a>
+        {% endif %}
+      {% endfor %}
     </div>
 </div>
