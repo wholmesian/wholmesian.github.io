@@ -252,6 +252,10 @@ tag_archive:
   type: liquid
   path: /tags/
 
+series_archive:
+  type: liquid
+  path: /series/
+
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
