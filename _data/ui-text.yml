@@ -661,6 +661,7 @@ ko: &DEFAULT_KO
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categories:"
+  sidebar_tags_label         : "Tags"
   date_label                 : "Updated:"
   comments_label             : "Leave a comment"
   comments_title             : "Comments"
