@@ -10,7 +10,7 @@
         {% assign tag_name = tag | first %}
         {% assign tag_size = tag | last | size %}
         {% if tag_size > 0 %}
-          <a href="{{ site.tag_archive.path | relative_url }}#{{ tag_name | slugify }}" class="tag-chip">
+          <a href="{{ site.tag_archive.path | relative_url }}{{ tag_name | slugify }}/" class="tag-chip">
             {{ tag_name }}
           </a>
         {% endif %}
