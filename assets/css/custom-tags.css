@@ -4,7 +4,7 @@
   gap: 8px; /* 칩 사이의 간격 */
 }
 
-.tag-chip {
+.tag-chip .tag-chip:visited {
   display: inline-block;
   padding: 4px 12px; /* 칩 내부 여백 (상하, 좌우) */
   font-size: 0.8em; /* 글자 크기 */
