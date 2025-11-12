@@ -1,5 +1,5 @@
 .tag-chips {
-  display: flex;
+  display: inline-flex; /* flex를 inline-flex로 변경하여 인라인으로 배치되도록 함 */
   flex-wrap: wrap;
   gap: 8px; /* 칩 사이의 간격 */
 }
