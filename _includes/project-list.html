@@ -5,7 +5,7 @@
     {% assign path_type = nil %}
 {% endcase %}
 
-{% if site.project_archive.path and page.projects[0] %}
+{% if site.project_archive.path and page.projects %}
   {% assign projects_sorted = page.projects | sort_natural %}
 
   <p class="page__taxonomy">
