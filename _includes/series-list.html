@@ -1,9 +1,13 @@
 {% if page.series %}
+  {% assign series_sorted = page.series | sort_natural %}
   <p class="page__taxonomy">
     <strong><i class="fas fa-fw fa-layer-group" aria-hidden="true"></i> Series: </strong>
     <span itemprop="keywords">
-    {% for series in page.series %}
-      <a href="{{ '/series/' | append: (series | slugify) | relative_url }}" class="page__taxonomy-item" rel="series">{{ series }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+    {% for series_word in series_sorted %}
+      {% assign series_page = site.pages | where: "taxonomy", series_word | first %}
+      {% if series_page %}
+        <a href="{{ series_page.url | relative_url }}" class="page__taxonomy-item" rel="series">{{ series_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+      {% endif %}
     {% endfor %}
     </span>
   </p>
