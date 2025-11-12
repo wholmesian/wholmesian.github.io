@@ -50,6 +50,7 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
         {% include page__date.html %}
+        {% if site.tag_archive.type and page.tags %} {% include tag-list.html %} {% endif %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}
