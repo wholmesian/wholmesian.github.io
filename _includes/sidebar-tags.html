@@ -14,7 +14,7 @@
       {% for i in (1..tags_max) reversed %}
         {% for tag in tags %}
           {% assign tag_name = tag | first %}
-          {% if tags[1].size == i %}
+          {% if tag[1].size == i %}
             <a href="{{ site.tag_archive.path | relative_url }}{{ tag_name | slugify }}/" class="tag-chip">
               {{ tag_name }}
             </a>
