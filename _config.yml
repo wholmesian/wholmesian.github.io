@@ -248,9 +248,9 @@ project_archive:
   type: liquid
   path: /projects/
 
-# tag_archive:
-#   type: liquid
-#   path: /tags/
+tag_archive:
+  type: liquid
+  path: /tags/
 
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
