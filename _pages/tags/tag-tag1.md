@@ -1,9 +1,9 @@
 ---
-title: "tag1"
+title: "AI 에이전트"
 layout: tag
-permalink: /tags/tag1/
+permalink: /tags/agentic-ai/
 author_profile: true
-taxonomy: tag1
+taxonomy: AI에이전트
 sidebar:
   nav: "categories"
 ---
