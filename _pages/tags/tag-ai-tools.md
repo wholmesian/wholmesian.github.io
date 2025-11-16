@@ -1,7 +1,7 @@
 ---
 title: "AI 도구"
 layout: tag
-permalink: /tags/ai-tools/
+permalink: /tags/AI도구/
 author_profile: true
 taxonomy: AI도구
 sidebar:
