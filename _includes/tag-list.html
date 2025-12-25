@@ -5,7 +5,11 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
     <span class="tag-chips">
       {% for tag_word in tags_sorted %}
-        <a href="{{ site.tag_archive.path | relative_url }}{{ tag_word | slugify }}/" class="tag-chip" rel="tag">{{ tag_word }}</a>
+        {% assign tag_slug = tag_word | slugify %}
+        {% if site.data.tag_slugs[tag_word] %}
+          {% assign tag_slug = site.data.tag_slugs[tag_word] %}
+        {% endif %}
+        <a href="{{ site.tag_archive.path | relative_url }}{{ tag_slug }}/" class="tag-chip" rel="tag">{{ tag_word }}</a>
       {% endfor %}
     </span>
   </div>
