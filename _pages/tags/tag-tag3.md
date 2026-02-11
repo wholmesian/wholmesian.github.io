@@ -1,9 +1,9 @@
 ---
-title: "tag3"
+title: "이야기"
 layout: tag
-permalink: /tags/tag3/
+permalink: /tags/story/
 author_profile: true
-taxonomy: tag3
+taxonomy: 이야기
 sidebar:
   nav: "categories"
 ---

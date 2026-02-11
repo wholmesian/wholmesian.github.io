@@ -3,6 +3,9 @@ title: "블로그 및 필자 소개"
 permalink: /about/
 layout: single
 comments: false
+author_profile: true
+sidebar:
+    nav: "categories"
 ---
 
 <p align="center">

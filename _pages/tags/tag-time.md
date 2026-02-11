@@ -1,9 +1,9 @@
 ---
-title: "tag2"
+title: "시간"
 layout: tag
-permalink: /tags/tag2/
+permalink: /tags/time/
 author_profile: true
-taxonomy: tag2
+taxonomy: 시간
 sidebar:
   nav: "categories"
 ---
