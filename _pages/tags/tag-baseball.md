@@ -1,9 +1,9 @@
 ---
-title: "tag4"
+title: "야구"
 layout: tag
-permalink: /tags/tag4/
+permalink: /tags/baseball/
 author_profile: true
-taxonomy: tag4
+taxonomy: 야구
 sidebar:
   nav: "categories"
 ---

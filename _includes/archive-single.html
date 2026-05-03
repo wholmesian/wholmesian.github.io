@@ -1,30 +1,51 @@
 {% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
-  {% assign teaser = site.teaser %}
+{% assign teaser = site.teaser %}
 {% endif %}
 
 {% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
 {% else %}
-  {% assign title = post.title %}
+{% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
+<div class="{{ include.type | default: 'list' }}__item" style="margin-bottom: 2em;">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="">
-      </div>
+    <div class="archive__item-teaser">
+      <img src="{{ teaser | relative_url }}" alt="">
+    </div>
     {% endif %}
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    {% if post.categories.size > 0 %}
+    {% assign category_word = post.categories | first %}
+    {% assign category_url = "" %}
+    {% for cat_page in site.pages %}
+    {% if cat_page.taxonomy == category_word %}
+    {% assign category_url = cat_page.url %}
+    {% break %}
+    {% endif %}
+    {% endfor %}
+    {% if category_url == "" %}
+    {% assign category_url = category_word | slugify | prepend: '#' | prepend: site.category_archive.path %}
+    {% endif %}
+    <div class="page__meta" style="margin: 0; font-size: 0.75em; color: #888;">
+      <a href="{{ category_url | relative_url }}" style="color: inherit; text-decoration: none;">
+        <i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ category_word }}
+      </a>
+    </div>
+    {% endif %}
+    <h2 class="archive__item-title no_toc" itemprop="headline" {% if post.categories.size> 0 %}style="margin-top:
+      0.1em;"{% endif %}>
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i
+          class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+      <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify |
+      strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
